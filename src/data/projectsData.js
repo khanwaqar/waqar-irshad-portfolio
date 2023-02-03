@@ -15,7 +15,7 @@ export const projectsData = [
         projectDesc: 'This project seeks to explore weather Data',
         tags: ['React', 'HTML' ,'CSS', 'Javascript'],
         code: 'https://github.com/khanwaqar/weather-react',
-        demo: 'weather-react-wine.vercel.app/',
+        demo: 'https://weather-react-wine.vercel.app/',
         image: "https://shots.codepen.io/Call_in/pen/pMYGbZ-1280.jpg?version=1565727814"
     },
     {
@@ -24,7 +24,7 @@ export const projectsData = [
         projectDesc: 'This project seeks to explore Forex Rates Data',
         tags: ['HTML', 'CSS','Javascript', "React"],
         code: 'https://github.com/sreerag-rajan/sportsjam-clone',
-        demo: 'react-forex-project-simple.vercel.app/',
+        demo: 'https://react-forex-project-simple.vercel.app/',
         image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1610986305769/EL1msBdfz.png?w=1200&h=630&fit=crop&crop=entropy&auto=compress,format&format=webp&fm=png"
     },
     // {
