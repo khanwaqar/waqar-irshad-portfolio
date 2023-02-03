@@ -3,35 +3,39 @@ export const achievementData = {
     achievements : [
         {
             id : 1,
-            title : '2021 Complete Python Bootcamp From Zero to Hero in Python',
-            details : 'A python course from Udemy',
-            date : 'Jan 28, 2021',
-            field : 'Coding',
-            image : 'https://udemy-certificate.s3.amazonaws.com/image/UC-0cd075aa-f55b-4d9f-aec0-119020a4e792.jpg?v=1611846350000'
+            title : 'Introduction to Cloud Computing',
+            details : 'A Cloud Computing course from Coursera/IBM',
+            date : 'January 2023',
+            field : 'Learning',
+            certificate: "https://www.coursera.org/account/accomplishments/certificate/4HK57MVMV9XH",
+            image : 'https://images.credly.com/size/340x340/images/2d178f89-4816-4190-8c4a-3bdbfec9db01/Dev_Skills_Network_-_Cloud_Computing_Core.png'
         },
         {
             id : 2,
-            title : 'The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert',
-            details : 'A MySQL course from Udemy',
-            date : 'May 25, 2021',
-            field : 'Database',
-            image : 'https://udemy-certificate.s3.amazonaws.com/image/UC-91ae3ea2-39ee-4a57-bf23-d397aff0d9a7.jpg?v=1621951317000'
+            title : 'Introduction to Web Development with HTML, CSS, JavaScript',
+            details : 'A Web development course from Coursera/IBM',
+            date : 'January 2023',
+            field : 'Coding',
+            certificate: "https://www.coursera.org/account/accomplishments/certificate/ZXL2MB2C6A62",
+            image : 'https://images.credly.com/size/340x340/images/6240e108-1407-4773-8621-cc2e4736d4e6/Web_Development_with_HTML-CSS-JavaScript_Essentials.png'
         },
         {
             id : 3,
-            title : 'Machine Learning A-Z: Hands-On Python & R in Data Science',
-            details : 'Data Science Course from Udemy',
-            date : 'Apr 13, 2021',
-            field : 'Machine Learning',
-            image : 'https://udemy-certificate.s3.amazonaws.com/image/UC-d9a7ba99-8635-47e6-96fc-7dd26a3dcbf1.jpg?v=1618297236000'
+            title : 'Getting Started with Git and GitHub',
+            details : 'Git Course from Coursera/IBM',
+            date : 'January 2023',
+            field : 'Learning',
+            certificate: "https://www.coursera.org/account/accomplishments/certificate/L4YL7MPVFJ7H",
+            image : 'https://images.credly.com/size/340x340/images/23859131-d0ff-4f44-900f-bac86165b941/image.png'
         },
         {
-            id : 3,
-            title : 'R Programming A-Z: R For Data Science With Real Exercises!',
-            details : 'R Programming Language Course from Udemy',
-            date : 'Feb 28, 2021',
-            field : 'Data Science',
-            image : 'https://udemy-certificate.s3.amazonaws.com/image/UC-8f5ff8e8-b6a4-4efd-a3fc-7fb63b29e77f.jpg?v=1614489452000'
+            id : 4,
+            title : 'Front-end Development with React!',
+            details : 'Git Course from Coursera/IBM',
+            date : 'January 2023',
+            field : 'Coding',
+            certificate: "https://www.coursera.org/account/accomplishments/certificate/8E69YYCWREFP",
+            image : 'https://images.credly.com/size/340x340/images/9dcdc294-79a6-47e5-a769-708c29c7c497/image.png'
         }
 
     ]
