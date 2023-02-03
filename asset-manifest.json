@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/waqar-irshad-portfolio/static/css/main.8bc118ca.chunk.css",
-    "main.js": "/waqar-irshad-portfolio/static/js/main.23246549.chunk.js",
-    "main.js.map": "/waqar-irshad-portfolio/static/js/main.23246549.chunk.js.map",
+    "main.js": "/waqar-irshad-portfolio/static/js/main.df47a7ae.chunk.js",
+    "main.js.map": "/waqar-irshad-portfolio/static/js/main.df47a7ae.chunk.js.map",
     "runtime-main.js": "/waqar-irshad-portfolio/static/js/runtime-main.be3328aa.js",
     "runtime-main.js.map": "/waqar-irshad-portfolio/static/js/runtime-main.be3328aa.js.map",
     "static/css/2.d012f88f.chunk.css": "/waqar-irshad-portfolio/static/css/2.d012f88f.chunk.css",
@@ -157,6 +157,6 @@
     "static/css/2.d012f88f.chunk.css",
     "static/js/2.a76823ba.chunk.js",
     "static/css/main.8bc118ca.chunk.css",
-    "static/js/main.23246549.chunk.js"
+    "static/js/main.df47a7ae.chunk.js"
   ]
 }
