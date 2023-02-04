@@ -2,7 +2,7 @@
   "name": "developer-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://khanwaqar.github.io/waqar-irshad-portfolio",
+  "homepage": "https://khanwaqar.github.io/",
   "dependencies": {
     "@material-ui/core": "^4.12.2",
     "@material-ui/icons": "^4.11.2",
@@ -29,7 +29,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts build",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
