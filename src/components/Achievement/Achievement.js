@@ -24,6 +24,7 @@ function Achievement() {
                         title={achieve.title}
                         details={achieve.details}
                         date={achieve.date}
+                        certificate = {achieve.certificate}
                         field={achieve.field}
                         image={achieve.image}/>
                     ))}
