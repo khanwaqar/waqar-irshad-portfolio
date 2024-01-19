@@ -1,4 +1,5 @@
 import resume from '../assets/pdf/resume.pdf'
+import waqar from '../assets/png/waqar.png'
 
 export const headerData = {
     name: 'Muhammad Waqar Irshad',

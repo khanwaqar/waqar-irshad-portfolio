@@ -14,7 +14,8 @@
     'Git',
     'Canva',
     'AWS',
-    'Ubuntu'
+    'Ubuntu',
+    'Laravel'
 ]
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.

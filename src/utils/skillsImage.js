@@ -75,6 +75,7 @@ import wolframalpha from '../assets/svg/skills/wolframalpha.svg'
 import node from '../assets/svg/skills/node.svg'
 import canva from '../assets/svg/skills/canva.svg'
 import ubuntu from '../assets/svg/skills/ubuntu.svg'
+import laravel from '../assets/svg/skills/laravel.svg'
 
 
 export const skillsImage = (skill) => {
@@ -232,6 +233,8 @@ export const skillsImage = (skill) => {
             return node;
         case 'ubuntu':
             return ubuntu;
+        case 'laravel':
+            return laravel;
         default:
             break;
     }
