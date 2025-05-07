@@ -15,7 +15,9 @@
     'Canva',
     'AWS',
     'Ubuntu',
-    'Laravel'
+    'Laravel',
+    'Craft CMS',
+    'Yii2',
 ]
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.

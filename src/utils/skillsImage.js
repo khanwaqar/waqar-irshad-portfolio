@@ -76,6 +76,8 @@ import node from '../assets/svg/skills/node.svg'
 import canva from '../assets/svg/skills/canva.svg'
 import ubuntu from '../assets/svg/skills/ubuntu.svg'
 import laravel from '../assets/svg/skills/laravel.svg'
+import yii from '../assets/svg/skills/yii.svg'
+import craftcms from '../assets/svg/skills/craftcms.svg'
 
 
 export const skillsImage = (skill) => {
@@ -235,6 +237,10 @@ export const skillsImage = (skill) => {
             return ubuntu;
         case 'laravel':
             return laravel;
+        case 'yii2':
+            return yii;
+        case 'craft cms':
+            return craftcms;
         default:
             break;
     }
