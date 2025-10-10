@@ -1,23 +1,46 @@
  export const skillsData = [
+    // Core Web
     'HTML',
-    'Javascript',
     'CSS',
+    'Javascript',
     'React',
-    'Django',
+    'Bootstrap',
+    'Tailwind',
+
+    // Backend & Frameworks
+    'Node JS',
+    'Express',
+    'Nest JS',
+    'PHP',
+    'Symfony',
+    'Python',
+
+    // Frontend
+    'React',
+    'Next JS',
+
+    // Databases
     'MongoDB',
     'MySQL',
-    'Python',
-    'Node JS',
-    'PHP',
+    'PostgreSQL',
+
+    // DevOps & Tools
     'Nginx',
-    'Bootstrap',
-    'Git',
-    'Canva',
     'AWS',
     'Ubuntu',
-    'Laravel',
+    'Git',
+    'Docker',
+
+    // CMS & Platforms
     'Craft CMS',
     'Yii2',
+    'Wordpress',
+
+    // Design & Productivity
+    'Canva',
+
+    // Others
+    'Fastify',
 ]
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.

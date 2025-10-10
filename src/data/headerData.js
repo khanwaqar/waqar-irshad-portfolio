@@ -3,8 +3,8 @@ import waqar from '../assets/png/waqar.png'
 
 export const headerData = {
     name: 'Muhammad Waqar Irshad',
-    title: "Web Developer",
-    desciption:"Life may be a meandering path but don't worry about it, rather enjoy it. It is about the journey, not the destination so explore all that comes your way, learn and grow from it, for this journey only happens once.",
-    image: 'https://raw.githubusercontent.com/khanwaqar/waqar-irshad-portfolio/main/public/waqar.jpg',
+    title: 'Full Stack Web Developer',
+    desciption: "I’m a developer who believes in growth through curiosity and creativity. Every project is a new journey — an opportunity to learn, build, and make something meaningful that lasts.",
+    image: '/waqar.png',
     resumePdf: resume
 }

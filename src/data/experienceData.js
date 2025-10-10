@@ -1,10 +1,10 @@
 export const experienceData = [
     {
         id: 1,
-        company: 'Estate Office',
-        jobtitle: 'Intern',
-        startYear: '2017',
-        endYear: '2018'
+        company: 'Zeropoint IT',
+        jobtitle: 'Full Stack Developer',
+        startYear: '2020',
+        endYear: 'Present'
     },
     {
         id: 2,
@@ -15,10 +15,17 @@ export const experienceData = [
     },
     {
         id: 3,
-        company: 'Zeropoint IT',
-        jobtitle: 'Backend Developer',
-        startYear: '2020',
-        endYear: 'Present'
+        company: 'Estate Office',
+        jobtitle: 'Intern',
+        startYear: '2017',
+        endYear: '2018'
     },
+    {
+        id: 4,
+        company: 'Zamtech',
+        jobtitle: 'Web Developer',
+        startYear: '2016',
+        endYear: '2017'
+    }
     
 ]
