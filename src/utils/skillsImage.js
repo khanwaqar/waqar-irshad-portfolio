@@ -78,6 +78,9 @@ import ubuntu from '../assets/svg/skills/ubuntu.svg'
 import laravel from '../assets/svg/skills/laravel.svg'
 import yii from '../assets/svg/skills/yii.svg'
 import craftcms from '../assets/svg/skills/craftcms.svg'
+import express from '../assets/svg/skills/Express.svg'
+import nest from '../assets/svg/skills/Nest.js.svg'
+import symfony from '../assets/svg/skills/Symfony.svg'
 
 
 export const skillsImage = (skill) => {
@@ -241,6 +244,12 @@ export const skillsImage = (skill) => {
             return yii;
         case 'craft cms':
             return craftcms;
+        case 'nest js':
+            return nest;
+        case 'symfony':
+            return symfony;
+        case 'express':
+            return express;
         default:
             break;
     }
