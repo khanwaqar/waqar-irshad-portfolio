@@ -1,0 +1,38 @@
+name: Deploy to EC2
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      PUBLICIP: 178.18.244.246
+      USERNAME: waqar
+      PROJECT_DIR: /home/waqar/projects/waqar-irshad-portfolio
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
+      - name: Install dependencies
+        run: npm install --force
+
+      - name: Build Next.js Application
+        run: npm run build
+
+      - name: Configure SSH
+        uses: webfactory/ssh-agent@v0.7.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Deploy on EC2
+        run: |
+          ssh -o StrictHostKeyChecking=no ubuntu@${{ env.PUBLICIP }} << 'EOF'
+            cd $PROJECT_DIR
+            git pull origin main
+            npm install --force
+            npm run build
+          EOF
