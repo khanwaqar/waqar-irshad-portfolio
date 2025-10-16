@@ -21,7 +21,7 @@ jobs:
         run: npm install --legacy-peer-deps
 
       - name: Build React Application
-        run: npm run build
+        run: CI=false npm run build
 
       - name: Configure SSH
         uses: webfactory/ssh-agent@v0.7.0
@@ -34,5 +34,5 @@ jobs:
             cd $PROJECT_DIR
             git pull origin main
             npm install --legacy-peer-deps
-            npm run build
+            CI=false npm run build
           EOF
