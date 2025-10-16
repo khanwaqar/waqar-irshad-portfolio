@@ -30,10 +30,5 @@ jobs:
 
       - name: Deploy on EC2
         run: |
-          ssh -o StrictHostKeyChecking=no waqar@${{ env.PUBLICIP }} << "EOF"
-            cd $PROJECT_DIR
-            echo "Current directory: $(pwd)"
-            git pull origin main
-            npm install --legacy-peer-deps
-            npm run build
-          EOF
+          ssh -o StrictHostKeyChecking=no waqar@${{ env.PUBLICIP }} "cd /home/waqar/projects/waqar-irshad-portfolio && pwd && git pull origin main && npm install --legacy-peer-deps && npm run build"
+
