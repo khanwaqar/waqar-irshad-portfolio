@@ -30,7 +30,7 @@ jobs:
 
       - name: Deploy on EC2
         run: |
-          ssh -o StrictHostKeyChecking=no ubuntu@${{ env.PUBLICIP }} << 'EOF'
+          ssh -o StrictHostKeyChecking=no waqar@${{ env.PUBLICIP }} << 'EOF'
             cd $PROJECT_DIR
             git pull origin main
             npm install --legacy-peer-deps
