@@ -13,7 +13,7 @@ export const projectsData = [
         id: 1,
         projectName: 'NewsHub',
         projectDesc: 'An AI-powered news assistant that aggregates, summarizes, and personalizes articles using NLP and machine learning.',
-        tags: ['React', 'FastAPI', 'Python', 'OpenAI API', 'PostgreSQL'],
+        tags: ['Next JS', 'Node JS', 'Python', 'OpenAI API', 'MongoDB'],
         code: '',
         demo: 'https://newshub.waqarlabs.online',
         image: 'https://dl.dropboxusercontent.com/scl/fi/3xcottleevsiw73hzp4z7/newshub.png?rlkey=0hxqltp226k7gr7ggca3fy77i&st=3qictupl&dl=0'
@@ -31,7 +31,7 @@ export const projectsData = [
         id: 9,
         projectName: 'Point of Sale (POS)',
         projectDesc: 'A complete POS solution for retail businesses with real-time inventory, billing, and reporting dashboards.',
-        tags: ['Vue.js', 'Laravel', 'MySQL', 'REST API'],
+        tags: ['React Vite', 'NodeJS', 'SQLite', 'REST API'],
         code: '',
         demo: 'https://pos.waqarlabs.online',
         image: 'https://dl.dropboxusercontent.com/scl/fi/l65l7ee3y4qx8ntppasua/pos.png?rlkey=5bdevfxyuw7xthilgf13abqlh&st=lwdmdb0x&dl=0'
@@ -40,7 +40,7 @@ export const projectsData = [
         id: 2,
         projectName: 'Dupatta Store Pakistan',
         projectDesc: 'A full-featured eCommerce solution with a custom front-end and back-end to manage the entire online retail workflow.',
-        tags: ['Laravel', 'PHP', 'HTML', 'CSS', 'Bootstrap', 'Javascript'],
+        tags: ['WordPress', 'PHP', 'HTML', 'CSS', 'Bootstrap', 'Javascript'],
         code: '',
         demo: 'https://dupattastore.pk/',
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdDGS05QN2TDQ_yoJBHzeivrRkRId2vzxYVA&s"
