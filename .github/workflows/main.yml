@@ -34,5 +34,5 @@ jobs:
             cd $PROJECT_DIR
             git pull origin main
             npm install --legacy-peer-deps
-            CI=false npm run build
+            npm run build
           EOF
