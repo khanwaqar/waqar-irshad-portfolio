@@ -63,6 +63,7 @@ function Projects() {
                                     code={project.code}
                                     demo={project.demo}
                                     image={project.image}
+                                    slug={project.slug}
                                 />
                             ))}
                         </div> 

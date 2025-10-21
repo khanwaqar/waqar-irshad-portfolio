@@ -21,6 +21,12 @@ function ProjectPage() {
         return content.toLowerCase().includes(search.toLowerCase())
     })
 
+    // Generate dynamic SEO content based on projects
+    const projectsCount = projectsData.length;
+    const technologies = [...new Set(projectsData.flatMap(project => project.tags))].slice(0, 10);
+    const seoDescription = `Browse ${projectsCount}+ full-stack development projects by ${headerData.name}. Featuring React, Node.js, ${technologies.slice(0, 3).join(', ')} and more. See live demos and source code.`;
+    const seoKeywords = `projects, portfolio projects, web development projects, react projects, ${technologies.join(', ')}, full stack projects, ${headerData.name} projects`;
+
     const useStyles = makeStyles((t) => ({
         search : {
             color: theme.tertiary, 
@@ -70,19 +76,81 @@ function ProjectPage() {
     return (
         <div className="projectPage" style={{backgroundColor: theme.secondary}}>
             <Helmet>
-                <title>{headerData.name} | Projects</title>
+                {/* Dynamic Title */}
+                <title>Projects | {headerData.name} - {headerData.title}</title>
+                
+                {/* Dynamic Meta Description */}
+                <meta name="description" content={seoDescription} />
+                
+                {/* Dynamic Keywords */}
+                <meta name="keywords" content={seoKeywords} />
+                
+                {/* Canonical URL */}
+                <link rel="canonical" href={`${headerData.siteUrl}/projects`} />
+                
+                {/* Open Graph Meta Tags */}
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content={`${headerData.siteUrl}/projects`} />
+                <meta property="og:title" content={`Projects | ${headerData.name} - ${headerData.title}`} />
+                <meta property="og:description" content={seoDescription} />
+                <meta property="og:image" content={headerData.image} />
+                
+                {/* Twitter Card Meta Tags */}
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:url" content={`${headerData.siteUrl}/projects`} />
+                <meta property="twitter:title" content={`Projects | ${headerData.name} - ${headerData.title}`} />
+                <meta property="twitter:description" content={seoDescription} />
+                <meta property="twitter:image" content={headerData.image} />
+                <meta name="twitter:creator" content={headerData.twitterHandle} />
+                
+                {/* Structured Data for Project Collection */}
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "ItemList",
+                        "name": "Web Development Projects",
+                        "description": seoDescription,
+                        "url": `${headerData.siteUrl}/projects`,
+                        "numberOfItems": projectsCount,
+                        "itemListElement": projectsData.slice(0, 5).map((project, index) => ({
+                            "@type": "ListItem",
+                            "position": index + 1,
+                            "item": {
+                                "@type": "CreativeWork",
+                                "name": project.projectName,
+                                "description": project.projectDesc,
+                                "url": `${headerData.siteUrl}/projects#${project.id}`,
+                                "keywords": project.tags.join(', ')
+                            }
+                        }))
+                    })}
+                </script>
             </Helmet>
-            <div className="projectPage-header" style={{backgroundColor:theme.primary}}>
-                <Link to="/">
-                        <AiOutlineHome className={classes.home}/>
+
+            {/* Semantic HTML Structure */}
+            <header className="projectPage-header" style={{backgroundColor:theme.primary}}>
+                <Link to="/" aria-label="Go back to homepage">
+                    <AiOutlineHome className={classes.home}/>
                 </Link>
-                <h1 style={{color: theme.secondary}}>Projects</h1>
-            </div>
-           <div className="projectPage-container">
-               <div className="projectPage-search">
-                   <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search project..." className={classes.search} />
-               </div>
-               <div className="project-container">
+                <h1 style={{color: theme.secondary}}>My Projects</h1>
+                <p style={{color: theme.secondary, opacity: 0.8, marginTop: '0.5rem'}}>
+                    {projectsCount}+ projects showcasing full-stack development expertise
+                </p>
+            </header>
+           
+           <main className="projectPage-container">
+               <section className="projectPage-search" aria-label="Search projects">
+                   <input 
+                       type="text" 
+                       value={search} 
+                       onChange={(e) => setSearch(e.target.value)} 
+                       placeholder="Search projects by name, description, or technology..." 
+                       className={classes.search}
+                       aria-label="Search projects" 
+                   />
+               </section>
+               
+               <section className="project-container" aria-label="Projects list">
                    <Grid className="project-grid" container direction="row" alignItems="center" justifyContent="center">
                         {filteredArticles.map(project => (
                             <SingleProject
@@ -95,11 +163,25 @@ function ProjectPage() {
                                 code={project.code}
                                 demo={project.demo}
                                 image={project.image} 
+                                slug={project.slug}
                             />
                         ))}
                    </Grid>
-               </div>
-           </div>    
+                   
+                   {/* No results state - good for UX and SEO */}
+                   {filteredArticles.length === 0 && (
+                       <div style={{textAlign: 'center', padding: '2rem', color: theme.tertiary}}>
+                           <h2>No projects found</h2>
+                           <p>Try searching with different keywords or <button 
+                               onClick={() => setSearch('')} 
+                               style={{background: 'none', border: 'none', color: theme.primary, textDecoration: 'underline', cursor: 'pointer'}}
+                           >
+                               clear search
+                           </button></p>
+                       </div>
+                   )}
+               </section>
+           </main>    
         </div>
     )
 }

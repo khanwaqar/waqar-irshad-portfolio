@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 
 import { ThemeContext } from './contexts/ThemeContext';
 import { Main, BlogPage, ProjectPage } from './pages'
+import ProjectDetail from './components/ProjectDetail/ProjectDetail';
+
+// In your routes:
 import { BackToTop } from './components'
 import ScrollToTop from './utils/ScrollToTop'
 
@@ -24,7 +27,7 @@ function App() {
           <Route path="/" exact component={Main} />
           <Route path="/blog" exact component={BlogPage} />
           <Route path="/projects" exact component={ProjectPage} />
-
+          <Route path="/projects/:projectSlug" component={ProjectDetail} /> 
           <Redirect to="/" />
         </Switch>
       </Router>
